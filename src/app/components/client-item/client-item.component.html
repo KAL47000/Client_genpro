@@ -1,0 +1,19 @@
+<h1>{{client?.name }}</h1>
+
+
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th> Article</th>
+            <th>Description</th>
+            <th>Coût</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of client?.products">
+            <td>{{ p.title }}</td>
+            <td>{{ p.description }}</td>
+            <td>{{ p.costProduction }}</td>
+        </tr>
+    </tbody>
+</table>

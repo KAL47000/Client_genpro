@@ -1,10 +1,7 @@
-<h1>My products</h1>
-
+<button class="btn btn-primary btn-lg" routerLink="/products">
+    Voir produits
+</button>
 <div>
-    <h3>Mes coûts de production</h3>
-   
-    <div *ngFor="let p of products">
-        {{ p.costProduction }}
-    </div>
 
+    <router-outlet></router-outlet>
 </div>

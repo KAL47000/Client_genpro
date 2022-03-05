@@ -1,0 +1,21 @@
+<div>
+    <h3 class="text-center text-black-50 display-4">Mes clients</h3> <hr>
+    
+
+    <div class="boxes" *ngFor="let client of clients">
+        <div class="box">
+            <h3>{{ client.name }}</h3>
+            <p><a [routerLink]="['/clients', client.codeClient]">info</a></p>
+        </div>
+        <div class="box">
+            <ul class="list-group" *ngFor="let p of client.products">
+                <li class="list-group-item">{{ p.title }}</li>
+                <li class="list-group-item">{{ p.description }}</li>
+                <li class="list-group-item">{{ p.costProduction }}</li>
+            </ul>
+        </div>
+    </div>
+   
+
+</div>
+
